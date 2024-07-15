@@ -10,5 +10,5 @@ pub fn process_two(data: &DataTwo) -> f64 {
 }
 
 pub fn greet_two() -> String {
-    "Greetings from Workspace Two!".to_string()
+    "2. Greetings from Workspace Two!".to_string()
 }

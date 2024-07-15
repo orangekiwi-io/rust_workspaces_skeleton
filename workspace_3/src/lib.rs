@@ -10,5 +10,5 @@ pub fn process_three(data: &DataThree) -> String {
 }
 
 pub fn greet_three() -> String {
-    "Salutations from Workspace Three!".to_string()
+    "3. Salutations from Workspace Three!".to_string()
 }

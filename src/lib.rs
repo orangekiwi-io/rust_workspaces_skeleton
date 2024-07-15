@@ -53,15 +53,16 @@ pub mod api {
 
     #[allow(clippy::vec_init_then_push)]
     pub fn run_all_greetings() -> Vec<String> {
+        #[allow(unused_mut)]
         let mut greetings = Vec::new();
 
-        // #[cfg(feature = "workspace_1")]
+        #[cfg(feature = "feature_1")]
         greetings.push(workspace_1::greet_one());
 
-        // #[cfg(feature = "workspace_2")]
+        #[cfg(feature = "feature_2")]
         greetings.push(workspace_2::greet_two());
 
-        // #[cfg(feature = "workspace_3")]
+        #[cfg(feature = "feature_3")]
         greetings.push(workspace_3::greet_three());
 
         greetings

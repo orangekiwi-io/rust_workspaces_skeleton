@@ -1,6 +1,6 @@
 [package]
 name = "crate_workspaces"
-description = "Skeleton crate for using multiple workspaces within it to split up code"
+description = "Skeleton crate for using multiple workspaces (and features) to split up code"
 resolver = "2"
 version = "0.1.0"
 
@@ -20,4 +20,7 @@ workspace_3 = { path = "./workspace_3" }
 members = ["workspace_1", "workspace_2", "workspace_3"]
 
 [features]
-# examples = []
+feature_1 = []
+feature_2 = ["feature_1"]
+feature_3 = ["feature_1"]
+full = ["feature_1", "feature_2", "feature_3"]

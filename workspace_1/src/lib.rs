@@ -7,5 +7,5 @@ pub fn process_one(data: &DataOne) -> i32 {
 }
 
 pub fn greet_one() -> String {
-    "Hello from Workspace One!".to_string()
+    "1. Hello from Workspace One!".to_string()
 }
