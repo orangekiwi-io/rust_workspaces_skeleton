@@ -1,0 +1,23 @@
+[package]
+name = "crate_workspaces"
+description = "Skeleton crate for using multiple workspaces within it to split up code"
+resolver = "2"
+version = "0.1.0"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["OrangeKiwi", "Richard Locke"]
+keywords = ["rust", "workspaces", "features", "crate", "skeleton"]
+
+[dependencies]
+workspace_1 = { path = "./workspace_1" }
+workspace_2 = { path = "./workspace_2" }
+workspace_3 = { path = "./workspace_3" }
+
+[workspace]
+members = ["workspace_1", "workspace_2", "workspace_3"]
+
+[features]
+# examples = []

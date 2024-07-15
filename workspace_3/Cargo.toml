@@ -1,0 +1,11 @@
+[package]
+name = "workspace_3"
+description = "Workspace 3 for testing workspaces within a crate"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+keywords.workspace = true
+
+[dependencies]
+workspace_1 = { path = "../workspace_1" }

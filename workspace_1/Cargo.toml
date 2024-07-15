@@ -1,0 +1,10 @@
+[package]
+name = "workspace_1"
+description = "Workspace 1 for testing workspaces within a crate"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+keywords.workspace = true
+
+[dependencies]
